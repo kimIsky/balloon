@@ -1,0 +1,258 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poor Story", cursive;
+}
+
+@-webkit-keyframes text_move {
+  to {
+    transform: translateY(20px);
+  }
+  from {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes text_move {
+  to {
+    transform: translateY(20px);
+  }
+  from {
+    transform: translateY(-20px);
+  }
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  background: url(../img/bg.png) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_logo {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  background: url(../img/main.png) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 300;
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  height: 200px;
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header p {
+  width: 100px;
+  height: 60px;
+  float: left;
+  text-align: center;
+  line-height: 60px;
+  font-size: 2rem;
+  background-color: transparent;
+  color: white;
+  transition: 0.6s;
+  border-radius: 30px;
+}
+header p:first-child {
+  border: 10px solid #c0392b;
+  -webkit-animation: text_move 2s 0.1s infinite;
+          animation: text_move 2s 0.1s infinite;
+}
+header p:nth-child(2) {
+  border: 10px solid #e67e22;
+  -webkit-animation: text_move 2s 0.2s infinite;
+          animation: text_move 2s 0.2s infinite;
+}
+header p:nth-child(3) {
+  border: 10px solid #f1c40f;
+  -webkit-animation: text_move 2s 0.3s infinite;
+          animation: text_move 2s 0.3s infinite;
+}
+header p:nth-child(4) {
+  border: 10px solid #2ecc71;
+  -webkit-animation: text_move 2s 0.4s infinite;
+          animation: text_move 2s 0.4s infinite;
+}
+header p:nth-child(5) {
+  border: 10px solid #2980b9;
+  -webkit-animation: text_move 2s 0.5s infinite;
+          animation: text_move 2s 0.5s infinite;
+}
+header p:nth-child(6) {
+  border: 10px solid #34495e;
+  -webkit-animation: text_move 2s 0.6s infinite;
+          animation: text_move 2s 0.6s infinite;
+}
+header p:last-child {
+  border: 10px solid #8e44ad;
+  -webkit-animation: text_move 2s 0.7s infinite;
+          animation: text_move 2s 0.7s infinite;
+}
+
+.main_box {
+  width: 100%;
+  height: 80%;
+  display: flex;
+}
+.main_box div {
+  display: none;
+}
+.main_box .balloon_1, .main_box .balloon_14 {
+  width: 150px;
+  height: 309px;
+  background: url(../img/balloon1.png) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+}
+.main_box .balloon_1 p, .main_box .balloon_14 p {
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 4rem;
+  visibility: hidden;
+}
+.main_box .balloon_2, .main_box .balloon_13 {
+  width: 150px;
+  height: 309px;
+  background: url(../img/balloon2.png) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 15;
+  cursor: pointer;
+}
+.main_box .balloon_2 p, .main_box .balloon_13 p {
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 4rem;
+  visibility: hidden;
+}
+.main_box .balloon_3, .main_box .balloon_12 {
+  width: 150px;
+  height: 309px;
+  background: url(../img/balloon3.png) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 20;
+  cursor: pointer;
+}
+.main_box .balloon_3 p, .main_box .balloon_12 p {
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 4rem;
+  visibility: hidden;
+}
+.main_box .balloon_4, .main_box .balloon_11 {
+  width: 150px;
+  height: 309px;
+  background: url(../img/balloon4.png) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 25;
+  cursor: pointer;
+}
+.main_box .balloon_4 p, .main_box .balloon_11 p {
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 4rem;
+  visibility: hidden;
+}
+.main_box .balloon_5, .main_box .balloon_10 {
+  width: 150px;
+  height: 309px;
+  background: url(../img/balloon5.png) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 30;
+  cursor: pointer;
+}
+.main_box .balloon_5 p, .main_box .balloon_10 p {
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 4rem;
+  visibility: hidden;
+}
+.main_box .balloon_6, .main_box .balloon_9 {
+  width: 150px;
+  height: 309px;
+  background: url(../img/balloon6.png) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 35;
+  cursor: pointer;
+}
+.main_box .balloon_6 p, .main_box .balloon_9 p {
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 4rem;
+  visibility: hidden;
+}
+.main_box .balloon_7, .main_box .balloon_8 {
+  width: 150px;
+  height: 309px;
+  background: url(../img/balloon7.png) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 40;
+  cursor: pointer;
+}
+.main_box .balloon_7 p, .main_box .balloon_8 p {
+  width: 150px;
+  height: 200px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 4rem;
+  visibility: hidden;
+}
+
+.input_box {
+  width: 300px;
+  height: 332px;
+  background: url(../img/input.png) center center no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  margin-top: -150px;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-content: center;
+  visibility: hidden;
+  z-index: 500;
+}
+.input_box h2 {
+  width: 100%;
+  height: 50px;
+  float: left;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 60px;
+  cursor: pointer;
+}/*# sourceMappingURL=balloon.css.map */
